@@ -1,0 +1,110 @@
+<!-- 각주 만드는 방법 커맨드 + / -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset=“UTF-8” />
+        <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
+        <meta property=“og:title” content=“르탄이 - 프로필 링크” />
+        <meta property=“og:description” content=“어서와 코딩은 처음이지?” />
+        <meta property=“og:image” content=“공유할 이미지” />
+        <title>르탄이 - 프로필 링크</title>
+        <style>
+            /* 폰트 스타일 */
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+                 * {
+                  font-family: "Pretendard",serif;
+                }
+
+
+            body {
+                background-color: #c9ffc7;
+            }
+            .frofile {
+                width: 100px;
+                height: 100px;
+                background-color: rgb(56, 50, 50);
+                border-radius: 100%;
+                border : 2px solid #fff;
+
+                /* <이미지 넣을때 필수 코드 삼총사> */
+                background-image: url('profile.png');
+                background-position:center ;
+                background-size: cover;
+             }
+
+             .main {
+                 color :#000;
+                 font-size: 20px;
+                 text-align: center;
+                 margin-top: 30px;
+                 margin-bottom: 10px;
+             }
+             .sub {
+                 color :#000;
+                 font-size: 14px;
+                 text-align: center;
+                 margin-top: 3px;
+                 margin-bottom: 30px;
+             }
+
+             .wrap {
+                 width: 300px;
+                 margin: 30px auto 0px auto;
+
+                /* <유용 4총사> */
+                 display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+             }
+
+             .wrap > a {
+                 width: 300px;
+                 height: 50px;
+                 background-color: #fff;
+                 border-radius: 8px;
+                 margin-bottom: 10px;
+                 font-size: 14px;
+                 font-weight: bold;
+
+                 display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                /* a태그 밑줄 없애기 */
+                text-decoration: none;
+
+
+                /* 그림자 만들기 */
+                box-shadow: 3px 3px 5px 0px #000;
+
+
+             }
+
+             /* 버튼 마우스 올렸을때 색 변하게 하는거 */
+             .wrap > a:hover {
+                background-color: #eeeded;
+             }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+             <div class="frofile"></div>
+             <h1 class="main">제이피넛</h1>
+             <p class="sub">N잡으로 월천 가즈앙-</p>
+
+             <a target="_blank" href="https://blog.naver.com/yeunje96">N잡 블로그에 놀러오세요</a>
+             <a target="_blank" href="https://instagram.com/step_by___cat">귀여운 우리집 디딤이 구경하세요</a>
+             <a target="_blank" href="https://instagram.com/happpy_womby">네모응가 메이커 Happpy womby</a>
+             <a target="_blank" href="https://smartstore.naver.com/rolling_stone">스마트스토어</a>
+     </div>
+    </body>
+</html>
